@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Attribute;
-use App\Models\AttributeValue;
+///use App\Models\AttributeValue;
 
 class AttributeController extends Controller
 {
