@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 /////student route
 Route::apiResource('/student', StudentController::class);
+Route::apiResource('attribute', AttributeController::class);
