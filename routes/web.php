@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/////student route
 Route::apiResource('/student', StudentController::class);
