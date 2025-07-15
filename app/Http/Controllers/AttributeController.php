@@ -13,7 +13,7 @@ class AttributeController extends Controller
         return Attribute::with('values');
     }
 
-    //store Attribute with value
+
     public function store(Request $request)
     {
         $attributes = Attribute::create([
