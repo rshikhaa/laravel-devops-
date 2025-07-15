@@ -21,6 +21,12 @@ jobs:
 
       - name: Install Composer Dependencies
         run: composer install --no-interaction --prefer-dist --optimize-autoloader
+        
+        - name: Copy .env
+        run: cp .env.example .env
+
+      - name: Generate App Key
+        run: php artisan key:generate
 
       - name: Run Laravel Tests
         run: php artisan test
